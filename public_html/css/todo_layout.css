@@ -24,7 +24,6 @@
 #left-sidebar-header {
     display: grid;
     grid-template-columns: 44% 56%;
-    /* min-height: 2.2rem; */
     min-height: 2.8rem;
 }
 
@@ -49,10 +48,8 @@
 }
 
 .list-item-card {
-    /* height: 5%; */
     display: flex;
     flex-direction: row;
-    /* min-height: 2.2rem; */
     min-height: 2.7rem;
 }
 
@@ -76,7 +73,6 @@
 
 .list-item-control {
     width: 20%;
-    
 }
 
 
