@@ -71,14 +71,6 @@ export default class ToDoModel {
     }
 
 
-
-
-
-
-
-
-
-
     /**
      * addNewItemTransaction
      * 
@@ -98,11 +90,6 @@ export default class ToDoModel {
         this.view.viewList(this.currentList);
         return newItem;
     }
-
-
-
-
-
 
 
     /**
@@ -200,20 +187,10 @@ export default class ToDoModel {
     } 
 
 
-
-
-
-    /////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
     highlight(){
         var firstChild = document.getElementById("todo-lists-list").firstElementChild;
         firstChild.style.color = "#ffc819";
         firstChild.style.backgroundColor = '#40454e';
-        // firstChild.style.backgroundColor = '#e9edf0';
     }
 
     unHighlight(){
@@ -222,10 +199,7 @@ export default class ToDoModel {
         firstChild.style.backgroundColor = '#353a44';
     }
 
-    ////////////////////////////////////////////////
-    /** 
-     * When you select a list, this list will move to the top
-     */
+   
     selectListOnTop(){
         var index = 0;
         for(let i = 0; i <this.toDoLists.length; i++){

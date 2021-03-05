@@ -49,20 +49,6 @@ export default class ToDoController {
                 document.getElementById("redo-button").style.pointerEvents = "auto";
             }
 
-
-
-
-
-
-
-            
-            console.log(appModel.tps.getUndoSize());
-
-
-
-
-
-
         }
 
         document.getElementById("redo-button").onmousedown = function() {

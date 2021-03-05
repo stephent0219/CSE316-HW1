@@ -96,29 +96,30 @@ export default class ToDoView {
         this.moveItemDownButton();
         this.deleteItemButton();
         this.greyOutArrowButton();
+        this.highlightCurrentItem();
     }
 
 
     highlightCurrentItem(){
-
-        for(let i =1; i < tasks.length; i++){
-
-        }
-        var t
-
-        for(let i =1; i < tasks.length; i++){
-            tasks[i].addEventListener("mouseover",() => {
-                var currentTask = document.getElementById("todo-list-item-"+(i-1));
-                currentTask.style.backgroundColor = "#7e8084";
-            });
+        
+        for(let i =0; i < 1000; i++){
+            if(document.getElementById("todo-list-item-"+i) != null){
+                document.getElementById("todo-list-item-"+i).addEventListener("mouseover",() =>{
+                    var currentTask = document.getElementById("todo-list-item-"+i);
+                    currentTask.style.backgroundColor = "#7e8084";
+                });
+            }
         }
 
-        for(let i =1; i < tasks.length; i++){
-            tasks[i].addEventListener("mouseout",() => {
-                var currentTask = document.getElementById("todo-list-item-"+(i-1));
-                currentTask.style.backgroundColor = "#40454e";
-            });
+        for(let i =0; i < 1000; i++){
+            if(document.getElementById("todo-list-item-"+i) != null){
+                document.getElementById("todo-list-item-"+i).addEventListener("mouseout",() =>{
+                    var currentTask = document.getElementById("todo-list-item-"+i);
+                    currentTask.style.backgroundColor = "#40454e";
+                });
+            }
         }
+
     }
 
 
@@ -127,20 +128,6 @@ export default class ToDoView {
         var tasks = document.getElementsByClassName("task-col");
         var tasksInput = document.getElementsByClassName("task-column-input");
         let view = this;
-
-        // for(let i =1; i < tasks.length; i++){
-        //     tasks[i].addEventListener("mouseover",() => {
-        //         var currentTask = document.getElementById("todo-list-item-"+(i-1));
-        //         currentTask.style.backgroundColor = "#7e8084";
-        //     });
-        // }
-
-        // for(let i =1; i < tasks.length; i++){
-        //     tasks[i].addEventListener("mouseout",() => {
-        //         var currentTask = document.getElementById("todo-list-item-"+(i-1));
-        //         currentTask.style.backgroundColor = "#40454e";
-        //     });
-        // }
 
         for(let i =1; i < tasks.length; i++){
             tasks[i].addEventListener("click",() => {
@@ -255,13 +242,6 @@ export default class ToDoView {
     }
 
 
-
-
-
-
-
-
-
     moveItemUpButton(){
         var controlButton = document.getElementsByClassName("list-item-control");
         var view = this;
@@ -340,10 +320,6 @@ export default class ToDoView {
         
         }
     }
-
-
-
-
 
 
     // THE VIEW NEEDS THE CONTROLLER TO PROVIDE PROPER RESPONSES
