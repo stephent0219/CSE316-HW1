@@ -31,7 +31,7 @@
     position: relative;
     box-shadow: 2px 2px 2px var(--swatch-primary); 
     height: 33px;
-    width: 1299px;
+    width: 1420px;
     left: 0.3%;
     top: 10%;
 }
@@ -41,7 +41,7 @@
     background-color: var(--swatch-complement);
     box-shadow: 2px 2px 2px var(--swatch-primary);
     color: rgb(233,237,240);
-    height: 667px;
+    height: 750px;
     width: 177px;
     left: 3%;
     top: 1%;
@@ -52,9 +52,9 @@
     background-color: var(--swatch-primary);
     box-shadow: 2px 2px 2px var(--swatch-primary);
     color: rgb(233,237,240);
-    height: 667px;
-    width: 1123px;
-    left: 2%;
+    height: 750px;
+    width: 1239px;
+    left: 1%;
     top: 1%;
 }
 
